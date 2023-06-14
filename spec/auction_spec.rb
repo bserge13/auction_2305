@@ -48,5 +48,8 @@ RSpec.describe Auction do
     item3.add_bid(attendee2, 15)
     expect(auction.unpopular_items).to eq([item2, item5])
     expect(auction.potential_revenue).to eq(87)
+# require 'pry'; binding.pry
+    expect(auction.bidders).to eq(["Megan", "Bob", "Mike"])
+    expect(auction.bidder_info).to eq({})
   end
 end

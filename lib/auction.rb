@@ -48,6 +48,22 @@ class Auction
   end
 
   def bidders
+    require 'pry'; binding.pry
+  
 
+    # bidders = []
+    # @items.each do |item|
+    #   bidders << item.bids.keys
+    #   require 'pry'; binding.pry
+    # end
+    # bidders
+
+
+    # @items.select do |item|
+    #   require 'pry'; binding.pry
+    #   item.bids.keys[0]
+    # end
+    # need to call on the insatnce variable of the object inside
+    # the hash 
   end
 end
